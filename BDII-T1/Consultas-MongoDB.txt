@@ -1,0 +1,76 @@
+Etapa 01 - Consulta MongoDB: 
+db.Viagens.aggregate([
+    {
+        $match: {
+            "Bairro_Partida": "Floresta"
+        }
+    },
+    {
+        $group: {
+        _id: "$fk_Codigo_Carro"
+        }
+    },
+    {
+        $project: {
+        _id: 0,
+        "Código do Carro": "$_id"
+        }
+    }
+])
+
+
+Etapa 02 - Consulta MongoDB:
+db.Viagens.aggregate([
+  {
+    $lookup: {
+      from: "Passageiros",
+      localField: "fk_CPF_Passageiro",
+      foreignField: "pk_CPF",
+      as: "passageiro"
+    }
+  },
+  {
+    $unwind: "$passageiro"
+  },
+  {
+    $match: {
+      $expr: { $eq: ["$Bairro_Partida", "$passageiro.Bairro"] }
+    }
+  },
+  {
+    $project: {
+      "_id" : 0,
+      "Nome do Passageiro": "$passageiro.Nome",
+      "Código do Carro": "$fk_Codigo_Carro"
+    }
+  }
+])
+
+Consulta 03 - Consulta MongoDB:
+db.Viagens.aggregate([
+  {
+    $group: {
+      _id: "$fk_CPF_Passageiro",
+      totalKms: { $sum: "$Kms" }
+    }
+  },
+  {
+    $lookup: {
+      from: "Passageiros",
+      localField: "_id",
+      foreignField: "pk_CPF",
+      as: "passageiro_info"
+    }
+  },
+  {
+    $unwind: "$passageiro_info"
+  },
+  {
+    $project: {
+      "CPF": "$passageiro_info.pk_CPF",
+      "Nome": "$passageiro_info.Nome",
+      "Total de Quilômetros Percorridos": "$totalKms",
+      "_id" : 0
+    }
+  }
+])

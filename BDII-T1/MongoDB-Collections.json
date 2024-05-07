@@ -1,0 +1,209 @@
+{
+  "Carros": [
+    {
+      "Codigo": 101,
+      "Placa": "ABC1234",
+      "Marca": "Toyota",
+      "Modelo": "Corolla",
+      "Ano": 2020,
+      "fk_CPF_Motorista": "12345678900"
+    },
+    {
+      "Codigo": 102,
+      "Placa": "XYZ5678",
+      "Marca": "Honda",
+      "Modelo": "Civic",
+      "Ano": 2018,
+      "fk_CPF_Motorista": "98765432100"
+    },
+    {
+      "Pk_Codigo": 103,
+      "Placa": "DEF9012",
+      "Marca": "Volkswagen",
+      "Modelo": "Gol",
+      "Ano": 2019,
+      "fk_CPF_Motorista": "65432198700"
+    }
+  ],
+
+  "Viagens": [
+    {
+      "Pk_Id_Viagem": "000001",
+      "fk_Codigo_Carro": 101,
+      "fk_CPF_Passageiro": "11122233344",
+      "Kms": 10,
+      "Valor": 20,
+      "TipoViagem": "Urbana",
+      "Bairro_Partida": "Centro",
+      "Bairro_Chegada": null,
+      "CidadeChegada": null
+    },
+    {
+      "Pk_Id_Viagem": "000002",
+      "fk_Codigo_Carro": 102,
+      "fk_CPF_Passageiro": "22233344455",
+      "Kms": 15,
+      "Valor": 25,
+      "TipoViagem": "Urbana",
+      "Bairro_Partida": "Moinhos",
+      "Bairro_Chegada": null,
+      "CidadeChegada": null
+    },
+    {
+      "Pk_Id_Viagem": "000003",
+      "fk_Codigo_Carro": 103,
+      "fk_CPF_Passageiro": "33344455566",
+      "Kms": 12,
+      "Valor": 22,
+      "TipoViagem": "Urbana",
+      "Bairro_Partida": "Floresta",
+      "Bairro_Chegada": null,
+      "CidadeChegada": null
+    },
+    {
+      "Pk_Id_Viagem": "000004",
+      "fk_Codigo_Carro": 101,
+      "fk_CPF_Passageiro": "44455566677",
+      "Kms": 8,
+      "Valor": 18,
+      "TipoViagem": "Urbana",
+      "Bairro_Partida": "Floresta",
+      "Bairro_Chegada": null,
+      "CidadeChegada": null
+    },
+    {
+      "Pk_Id_Viagem": "000005",
+      "fk_Codigo_Carro": 102,
+      "fk_CPF_Passageiro": "55566677788",
+      "Kms": 20,
+      "Valor": 30,
+      "TipoViagem": "Urbana",
+      "Bairro_Partida": "Cascata",
+      "Bairro_Chegada": null,
+      "CidadeChegada": null
+    },
+    {
+      "Pk_Id_Viagem": "000006",
+      "fk_Codigo_Carro": 103,
+      "fk_CPF_Passageiro": "11122233344",
+      "Kms": 25,
+      "Valor": 35,
+      "TipoViagem": "Urbana",
+      "Bairro_Partida": "Partenon",
+      "Bairro_Chegada": null,
+      "CidadeChegada": null
+    },
+    {
+      "Pk_Id_Viagem": "000007",
+      "fk_Codigo_Carro": 101,
+      "fk_CPF_Passageiro": "22233344455",
+      "Kms": 50,
+      "Valor": 100,
+      "TipoViagem": "Interurb",
+      "Bairro_Partida": "Moinhos",
+      "Bairro_Chegada": null,
+      "CidadeChegada": "Canoas"
+    },
+    {
+      "Pk_Id_Viagem": "000008",
+      "fk_Codigo_Carro": 102,
+      "fk_CPF_Passageiro": "33344455566",
+      "Kms": 70,
+      "Valor": 120,
+      "TipoViagem": "Interurb",
+      "Bairro_Partida": "Moinhos",
+      "Bairro_Chegada": null,
+      "CidadeChegada": "Gravatai"
+    },
+    {
+      "Pk_Id_Viagem": "000009",
+      "fk_Codigo_Carro": 103,
+      "fk_CPF_Passageiro": "44455566677",
+      "Kms": 60,
+      "Valor": 110,
+      "TipoViagem": "Interurb",
+      "Bairro_Partida": "Floresta",
+      "Bairro_Chegada": null,
+      "CidadeChegada": "Canoas"
+    },
+    {
+      "Pk_Id_Viagem": "000010",
+      "fk_Codigo_Carro": 101,
+      "fk_CPF_Passageiro": "55566677788",
+      "Kms": 80,
+      "Valor": 130,
+      "TipoViagem": "Interurb",
+      "Bairro_Partida": "Partenon",
+      "Bairro_Chegada": null,
+      "CidadeChegada": "Canoas"
+    }
+  ],
+
+
+  "Passageiros": [
+    {
+      "pk_CPF": "11122233344",
+      "Nome": "Brenda Meeks",
+      "Email": "brendameeks@email.com",
+      "Telefone": "11123456789",
+      "Bairro": "Centro",
+      "MeioDePagamento": "Credito"
+    },
+    {
+      "pk_CPF": "22233344455",
+      "Nome": "Fogell McLovin",
+      "Email": "mclovin@email.com",
+      "Telefone": "11234567890",
+      "Bairro": "Moinhos",
+      "MeioDePagamento": "Dinheiro"
+    },
+    {
+      "pk_CPF": "33344455566",
+      "Nome": "Regina George",
+      "Email": "reginageorge@email.com",
+      "Telefone": "11345678901",
+      "Bairro": "Floresta",
+      "MeioDePagamento": "Debito"
+    },
+    {
+      "pk_CPF": "44455566677",
+      "Nome": "Elle Woods",
+      "Email": "ellewood@email.com",
+      "Telefone": "11456789012",
+      "Bairro": "Cascata",
+      "MeioDePagamento": "Credito"
+    },
+    {
+      "pk_CPF": "55566677788",
+      "Nome": "Jenna Rink",
+      "Email": "jennar_30@email.com",
+      "Telefone": "11567890123",
+      "Bairro": "Partenon",
+      "MeioDePagamento": "Dinheiro"
+    }
+  ],
+
+  "Motoristas": [
+    {
+      "pk_Id": 1,
+      "CNH": "12345678901",
+      "Nome": "Dominic Toretto",
+      "CPF_Motorista": "12345678900",
+      "Email": "toretto@email.com"
+    },
+    {
+      "pk_Id": 2,
+      "CNH": "98765432109",
+      "Nome": "Relampago McQueen",
+      "CPF_Motorista": "98765432100",
+      "Email": "mcquenn@email.com"
+    },
+    {
+      "pk_Id": 3,
+      "CNH": "65432198707",
+      "Nome": "Brian O Conner",
+      "CPF_Motorista": "65432198700",
+      "Email": "eobrian@email.com"
+    }
+  ]
+}
