@@ -20,10 +20,7 @@
                     "CNH": "12345678901",
                     "Nome": "Dominic Toretto",
                     "Email": "toretto@email.com",
-                    "Viagens": [ // Viagens associadas ao motorista da viagem (referência)
-                        // Outras viagens realizadas pelo mesmo motorista
-                        // Serão necessários uso de Jois, mas para casos de busca
-                        // Muito específicos. 
+                    "Viagens": [ 
                         {
                             "Id_Viagem": "000001"
                         },
@@ -39,7 +36,7 @@
                     ]
                 }
             },
-            "Passageiro": [ //Passageiros que realizaram está viagem
+            "Passageiro": [ 
                 {
                     "CPF_Passageiro":"11122233344",
                     "Nome": "Brenda Meeks",
@@ -70,10 +67,7 @@
                     "CNH": "98765432109",
                     "Nome": "Relampago McQueen",
                     "Email": "mcquenn@email.com",
-                    "Viagens": [ // Viagens associadas ao motorista da viagem (referência)
-                        // Outras viagens realizadas pelo mesmo motorista
-                        // Serão necessários uso de Jois, mas para casos de busca
-                        // Muito específicos. 
+                    "Viagens": [ 
                         {
                             "Id_Viagem": "000002"
                         },
@@ -86,7 +80,7 @@
                     ]
                 }
             },
-            "Passageiro": [ //Passageiros que realizaram está viagem
+            "Passageiro": [ 
                 {
                     "CPF_Passageiro":"22233344455",
                     "Nome": "Fogell McLovin",
@@ -117,10 +111,7 @@
                     "Nome": "Brian O Conner",
                     "CPF_Motorista": "65432198700",
                     "Email": "eobrian@email.com",
-                    "Viagens": [ // Viagens associadas ao motorista da viagem (referência)
-                        // Outras viagens realizadas pelo mesmo motorista
-                        // Serão necessários uso de Jois, mas para casos de busca
-                        // Muito específicos. 
+                    "Viagens": [ 
                         {
                             "Id_Viagem": "000003"
                         },
@@ -133,7 +124,7 @@
                     ]
                 }
             },
-            "Passageiro": [ //Passageiros que realizaram está viagem
+            "Passageiro": [ 
                 {
                     "CPF_Passageiro":"33344455566",
                     "Nome": "Regina George",
@@ -164,10 +155,7 @@
                     "CNH": "12345678901",
                     "Nome": "Dominic Toretto",
                     "Email": "toretto@email.com",
-                    "Viagens": [ // Viagens associadas ao motorista da viagem (referência)
-                        // Outras viagens realizadas pelo mesmo motorista
-                        // Serão necessários uso de Jois, mas para casos de busca
-                        // Muito específicos. 
+                    "Viagens": [ 
                         {
                             "Id_Viagem": "000001"
                         },
@@ -183,7 +171,7 @@
                     ]
                 }
             },
-            "Passageiro": [ //Passageiros que realizaram está viagem
+            "Passageiro": [ 
                 {
                     "CPF_Passageiro":"44455566677",
                     "Nome": "Elle Woods",
@@ -214,10 +202,7 @@
                     "CNH": "98765432109",
                     "Nome": "Relampago McQueen",
                     "Email": "mcquenn@email.com",
-                    "Viagens": [ // Viagens associadas ao motorista da viagem (referência)
-                        // Outras viagens realizadas pelo mesmo motorista
-                        // Serão necessários uso de Jois, mas para casos de busca
-                        // Muito específicos. 
+                    "Viagens": [ 
                         {
                             "Id_Viagem": "000002"
                         },
@@ -230,7 +215,233 @@
                     ]
                 }
             },
-            "Passageiro": [ //Passageiros que realizaram está viagem
+            "Passageiro": [ 
+                {
+                    "CPF_Passageiro":"55566677788",
+                    "Nome": "Jenna Rink",
+                    "Email": "jennar_30@email.com",
+                    "Telefone": "11567890123",
+                    "Bairro": "Partenon",
+                    "MeioDePagamento": "Dinheiro"
+                }
+            ]
+        },
+        {
+            "Id_Viagem": "000006",
+            "Kms": 25,
+            "Valor": 35,
+            "TipoViagem": "Urbana",
+            "BairroPartida": "Partenon",
+            "BairroChegada": null,
+            "CidadeChegada": null,
+            "Carro": {
+                "Codigo": 103,
+                "Placa": "DEF9012",
+                "Marca": "Volkswagen",
+                "Modelo": "Gol",
+                "Ano": 2019,
+                "Motorista": {
+                    "Id": 3,
+                    "CNH": "65432198707",
+                    "Nome": "Brian O Conner",
+                    "CPF_Motorista": "65432198700",
+                    "Email": "eobrian@email.com",
+                    "Viagens": [ 
+                        {
+                            "Id_Viagem": "000003"
+                        },
+                        {
+                            "Id_Viagem": "000006"
+                        },
+                        {
+                            "Id_Viagem": "000009"
+                        }
+                    ]
+                }
+            },
+            "Passageiro": [ 
+                {
+                    "CPF_Passageiro":"11122233344",
+                    "Nome": "Brenda Meeks",
+                    "Email": "brendameeks@email.com",
+                    "Telefone": "11123456789",
+                    "Bairro": "Centro",
+                    "MeioDePagamento": "Credito"
+                }
+            ]
+        },
+        {
+            "Id_Viagem": "000007",
+            "Kms": 50,
+            "Valor": 100,
+            "TipoViagem": "Interurb",
+            "BairroPartida": "Moinhos",
+            "BairroChegada": null,
+            "CidadeChegada": "Canoas",
+            "Carro": {
+                "Codigo": 101,
+                "Placa": "ABC1234",
+                "Marca": "Toyota",
+                "Modelo": "Corolla",
+                "Ano": 2020,
+                "Motorista": {
+                    "Id": 1,
+                    "CPF_Motorista": "12345678900",
+                    "CNH": "12345678901",
+                    "Nome": "Dominic Toretto",
+                    "Email": "toretto@email.com",
+                    "Viagens": [ 
+                        {
+                            "Id_Viagem": "000001"
+                        },
+                        {
+                            "Id_Viagem": "000004"
+                        },
+                        {
+                            "Id_Viagem": "000007"
+                        },
+                        {
+                            "Id_Viagem": "000010"
+                        }
+                    ]
+                }
+            },
+            "Passageiro": [ 
+                {
+                    "CPF_Passageiro":"22233344455",
+                    "Nome": "Fogell McLovin",
+                    "Email": "mclovin@email.com",
+                    "Telefone": "11234567890",
+                    "Bairro": "Moinhos",
+                    "MeioDePagamento": "Dinheiro"
+                }
+            ]
+        },
+        {
+            "Id_Viagem": "000008",
+            "Kms": 70,
+            "Valor": 120,
+            "TipoViagem": "Interurb",
+            "BairroPartida": "Moinhos",
+            "BairroChegada": null,
+            "CidadeChegada": "Gravatai",
+            "Carro": {
+                "Codigo": 102,
+                "Placa": "XYZ5678",
+                "Marca": "Honda",
+                "Modelo": "Civic",
+                "Ano": 2018,
+                "Motorista": {
+                    "Id": 2,
+                    "CPF_Motorista": "98765432100",
+                    "CNH": "98765432109",
+                    "Nome": "Relampago McQueen",
+                    "Email": "mcquenn@email.com",
+                    "Viagens": [ 
+                        {
+                            "Id_Viagem": "000002"
+                        },
+                        {
+                            "Id_Viagem": "000005"
+                        },
+                        {
+                            "Id_Viagem": "000008"
+                        }
+                    ]
+                }
+            },
+            "Passageiro": [ 
+                {
+                    "CPF_Passageiro":"33344455566",
+                    "Nome": "Regina George",
+                    "Email": "reginageorge@email.com",
+                    "Telefone": "11345678901",
+                    "Bairro": "Floresta",
+                    "MeioDePagamento": "Debito"
+                }
+            ]
+        },
+        {
+            "Id_Viagem": "000009",
+            "Kms": 60,
+            "Valor": 110,
+            "TipoViagem": "Interurb",
+            "BairroPartida": "Floresta",
+            "BairroChegada": null,
+            "CidadeChegada": "Canoas",
+            "Carro": {
+                "Codigo": 103,
+                "Placa": "DEF9012",
+                "Marca": "Volkswagen",
+                "Modelo": "Gol",
+                "Ano": 2019,
+                "Motorista": {
+                    "Id": 3,
+                    "CNH": "65432198707",
+                    "Nome": "Brian O Conner",
+                    "CPF_Motorista": "65432198700",
+                    "Email": "eobrian@email.com",
+                    "Viagens": [ 
+                        {
+                            "Id_Viagem": "000003"
+                        },
+                        {
+                            "Id_Viagem": "000006"
+                        },
+                        {
+                            "Id_Viagem": "000009"
+                        }
+                    ]
+                }
+            },
+            "Passageiro": [ 
+                {
+                    "CPF_Passageiro":"44455566677",
+                    "Nome": "Elle Woods",
+                    "Email": "ellewood@email.com",
+                    "Telefone": "11456789012",
+                    "Bairro": "Cascata",
+                    "MeioDePagamento": "Credito"
+                }
+            ]
+        },
+        {
+            "Id_Viagem": "000010",
+            "Kms": 80,
+            "Valor": 130,
+            "TipoViagem": "Interurb",
+            "BairroPartida": "Partenon",
+            "BairroChegada": null,
+            "CidadeChegada": "Canoas",
+            "Carro": {
+                "Codigo": 101,
+                "Placa": "ABC1234",
+                "Marca": "Toyota",
+                "Modelo": "Corolla",
+                "Ano": 2020,
+                "Motorista": {
+                    "Id": 1,
+                    "CPF_Motorista": "12345678900",
+                    "CNH": "12345678901",
+                    "Nome": "Dominic Toretto",
+                    "Email": "toretto@email.com",
+                    "Viagens": [ 
+                        {
+                            "Id_Viagem": "000001"
+                        },
+                        {
+                            "Id_Viagem": "000004"
+                        },
+                        {
+                            "Id_Viagem": "000007"
+                        },
+                        {
+                            "Id_Viagem": "000010"
+                        }
+                    ]
+                }
+            },
+            "Passageiro": [
                 {
                     "CPF_Passageiro":"55566677788",
                     "Nome": "Jenna Rink",
@@ -244,51 +455,474 @@
     ],
     "Passageiros": [
         {
-            "CPF_Passageiro": ,
-            "Nome": ,
-            "Email": ,
-            "Telefone": ,
-            "Bairro": ,
-            "MeioDePagamento": ,
+            "CPF_Passageiro":"11122233344",
+            "Nome": "Brenda Meeks",
+            "Email": "brendameeks@email.com",
+            "Telefone": "11123456789",
+            "Bairro": "Centro",
+            "MeioDePagamento": "Credito",
             "Viagens": [
                 {
-                    "Id_Viagem": ,
-                    "Kms": ,
-                    "Valor": ,
-                    "TipoViagem": ,
-                    "BairroPartida": ,
-                    "BairroChegada": ,
-                    "CidadeChegada": ,
+                    "Id_Viagem": "000001",
+                    "Kms": 10,
+                    "Valor": 20,
+                    "TipoViagem": "Urbana",
+                    "BairroPartida": "Centro",
+                    "BairroChegada": null,
+                    "CidadeChegada": null,
                     "Carro": {
-                        "Codigo": ,
-                        "Placa": ,
-                        "Marca": ,
-                        "Modelo": ,
-                        "Ano": ,
+                        "Codigo": 101,
+                        "Placa": "ABC1234",
+                        "Marca": "Toyota",
+                        "Modelo": "Corolla",
+                        "Ano": 2020,
                         "Motorista": {
-                            "Id": ,
-                            "CPF_Motorista": ,
-                            "CNH": ,
-                            "Nome": ,
-                            "Email": ,
+                            "Id": 1,
+                            "CPF_Motorista": "12345678900",
+                            "CNH": "12345678901",
+                            "Nome": "Dominic Toretto",
+                            "Email": "toretto@email.com",
                             "Carro": {
-                                "Codigo":
+                                "Codigo":101
                             },
                             "Viagens": [
                                 {
-                                    "Id_Viagem":
+                                    "Id_Viagem": "000001"
                                 },
+                                {
+                                    "Id_Viagem": "000004"
+                                },
+                                {
+                                    "Id_Viagem": "000007"
+                                },
+                                {
+                                    "Id_Viagem": "000010"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "Id_Viagem": "000006",
+                    "Kms": 25,
+                    "Valor": 35,
+                    "TipoViagem": "Urbana",
+                    "BairroPartida": "Partenon",
+                    "BairroChegada": null,
+                    "CidadeChegada": null,
+                    "Carro": {
+                        "Codigo": 103,
+                        "Placa": "DEF9012",
+                        "Marca": "Volkswagen",
+                        "Modelo": "Gol",
+                        "Ano": 2019,
+                        "Motorista": {
+                            "Id": 3,
+                            "CNH": "65432198707",
+                            "Nome": "Brian O Conner",
+                            "CPF_Motorista": "65432198700",
+                            "Email": "eobrian@email.com",
+                            "Carro": {
+                                "Codigo":103                            
+                            },
+                            "Viagens": [
+                                {
+                                    "Id_Viagem": "000003"
+                                },
+                                {
+                                    "Id_Viagem": "000006"
+                                },
+                                {
+                                    "Id_Viagem": "000009"
+                                }
                             ]
                         }
                     }
                 }
             ],
-            "Carros": [ //Referências de carros que um memsmo já utilizou (histórico)
+            "Carros": [ 
                 {
-                    "Codigo"
+                    "Codigo": 101
                 },
                 {
-                    "Codigo"
+                    "Codigo" : 103
+                }
+            ]
+        },
+        {
+            "CPF_Passageiro":"22233344455",
+            "Nome": "Fogell McLovin",
+            "Email": "mclovin@email.com",
+            "Telefone": "11234567890",
+            "Bairro": "Moinhos",
+            "MeioDePagamento": "Dinheiro",
+            "Viagens": [
+                {
+                    "Id_Viagem": "000002",
+                    "Kms": 15,
+                    "Valor": 25,
+                    "TipoViagem": "Urbana",
+                    "BairroPartida": "Moinhos",
+                    "BairroChegada": null,
+                    "CidadeChegada": null,
+                    "Carro": {
+                        "Codigo": 102,
+                        "Placa": "XYZ5678",
+                        "Marca": "Honda",
+                        "Modelo": "Civic",
+                        "Ano": 2018,
+                        "Motorista": {
+                            "Id": 2,
+                            "CPF_Motorista": "98765432100",
+                            "CNH": "98765432109",
+                            "Nome": "Relampago McQueen",
+                            "Email": "mcquenn@email.com",
+                            "Carro": {
+                                "Codigo":102
+                            },
+                            "Viagens": [
+                                {
+                                    "Id_Viagem": "000002"
+                                },
+                                {
+                                    "Id_Viagem": "000005"
+                                },
+                                {
+                                    "Id_Viagem": "000008"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "Id_Viagem": "000007",
+                    "Kms": 50,
+                    "Valor": 100,
+                    "TipoViagem": "Interurb",
+                    "BairroPartida": "Moinhos",
+                    "BairroChegada": null,
+                    "CidadeChegada": "Canoas",
+                    "Carro": {
+                        "Codigo": 101,
+                        "Placa": "ABC1234",
+                        "Marca": "Toyota",
+                        "Modelo": "Corolla",
+                        "Ano": 2020,
+                        "Motorista": {
+                            "Id": 1,
+                            "CPF_Motorista": "12345678900",
+                            "CNH": "12345678901",
+                            "Nome": "Dominic Toretto",
+                            "Email": "toretto@email.com",
+                            "Carro": {
+                                "Codigo":101                            
+                            },
+                            "Viagens": [
+                                {
+                                    "Id_Viagem": "000001"
+                                },
+                                {
+                                    "Id_Viagem": "000004"
+                                },
+                                {
+                                    "Id_Viagem": "000007"
+                                },
+                                {
+                                    "Id_Viagem": "000010"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "Carros": [ 
+                {
+                    "Codigo": 101
+                },
+                {
+                    "Codigo" : 102
+                }
+            ]
+        },
+        {
+            "CPF_Passageiro":"33344455566",
+            "Nome": "Regina George",
+            "Email": "reginageorge@email.com",
+            "Telefone": "11345678901",
+            "Bairro": "Floresta",
+            "MeioDePagamento": "Debito",
+            "Viagens": [
+                {
+                    "Id_Viagem": "000003",
+                    "Kms": 12,
+                    "Valor": 22,
+                    "TipoViagem": "Urbana",
+                    "BairroPartida": "Floresta",
+                    "BairroChegada": null,
+                    "CidadeChegada": null,
+                    "Carro": {
+                        "Codigo": 103,
+                        "Placa": "DEF9012",
+                        "Marca": "Volkswagen",
+                        "Modelo": "Gol",
+                        "Ano": 2019,
+                        "Motorista": {
+                            "Id": 3,
+                            "CNH": "65432198707",
+                            "Nome": "Brian O Conner",
+                            "CPF_Motorista": "65432198700",
+                            "Email": "eobrian@email.com",
+                            "Carro": {
+                                "Codigo":103
+                            },
+                            "Viagens": [
+                                {
+                                    "Id_Viagem": "000003"
+                                },
+                                {
+                                    "Id_Viagem": "000006"
+                                },
+                                {
+                                    "Id_Viagem": "000009"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "Id_Viagem": "000008",
+                    "Kms": 70,
+                    "Valor": 120,
+                    "TipoViagem": "Interurb",
+                    "BairroPartida": "Moinhos",
+                    "BairroChegada": null,
+                    "CidadeChegada": "Gravatai",
+                    "Carro": {
+                        "Codigo": 102,
+                        "Placa": "XYZ5678",
+                        "Marca": "Honda",
+                        "Modelo": "Civic",
+                        "Ano": 2018,
+                        "Motorista": {
+                            "Id": 2,
+                            "CPF_Motorista": "98765432100",
+                            "CNH": "98765432109",
+                            "Nome": "Relampago McQueen",
+                            "Email": "mcquenn@email.com",
+                            "Carro": {
+                                "Codigo":102                            
+                            },
+                            "Viagens": [
+                                {
+                                    "Id_Viagem": "000002"
+                                },
+                                {
+                                    "Id_Viagem": "000005"
+                                },
+                                {
+                                    "Id_Viagem": "000008"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "Carros": [
+                {
+                    "Codigo": 103
+                },
+                {
+                    "Codigo" : 102
+                }
+            ]
+        },
+        {
+            "CPF_Passageiro":"44455566677",
+            "Nome": "Elle Woods",
+            "Email": "ellewood@email.com",
+            "Telefone": "11456789012",
+            "Bairro": "Cascata",
+            "MeioDePagamento": "Credito",
+            "Viagens": [
+                {
+                    "Id_Viagem": "000004",
+                    "Kms": 8,
+                    "Valor": 18,
+                    "TipoViagem": "Urbana",
+                    "BairroPartida": "Floresta",
+                    "BairroChegada": null,
+                    "CidadeChegada": null,
+                    "Carro": {
+                        "Codigo": 101,
+                        "Placa": "ABC1234",
+                        "Marca": "Toyota",
+                        "Modelo": "Corolla",
+                        "Ano": 2020,
+                        "Motorista": {
+                            "Id": 1,
+                            "CPF_Motorista": "12345678900",
+                            "CNH": "12345678901",
+                            "Nome": "Dominic Toretto",
+                            "Email": "toretto@email.com",
+                            "Carro": {
+                                "Codigo":101
+                            },
+                            "Viagens": [
+                                {
+                                    "Id_Viagem": "000001"
+                                },
+                                {
+                                    "Id_Viagem": "000004"
+                                },
+                                {
+                                    "Id_Viagem": "000007"
+                                },
+                                {
+                                    "Id_Viagem": "000010"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "Id_Viagem": "000009",
+                    "Kms": 60,
+                    "Valor": 110,
+                    "TipoViagem": "Interurb",
+                    "BairroPartida": "Floresta",
+                    "BairroChegada": null,
+                    "CidadeChegada": "Canoas",
+                    "Carro": {
+                        "Codigo": 103,
+                        "Placa": "DEF9012",
+                        "Marca": "Volkswagen",
+                        "Modelo": "Gol",
+                        "Ano": 2019,
+                        "Motorista": {
+                            "Id": 3,
+                            "CNH": "65432198707",
+                            "Nome": "Brian O Conner",
+                            "CPF_Motorista": "65432198700",
+                            "Email": "eobrian@email.com",
+                            "Carro": {
+                                "Codigo":103                            
+                            },
+                            "Viagens": [
+                                {
+                                    "Id_Viagem": "000003"
+                                },
+                                {
+                                    "Id_Viagem": "000006"
+                                },
+                                {
+                                    "Id_Viagem": "000009"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "Carros": [ 
+                {
+                    "Codigo": 101
+                },
+                {
+                    "Codigo" : 103
+                }
+            ]
+        },
+        {
+            "CPF_Passageiro":"55566677788",
+            "Nome": "Jenna Rink",
+            "Email": "jennar_30@email.com",
+            "Telefone": "11567890123",
+            "Bairro": "Partenon",
+            "MeioDePagamento": "Dinheiro",
+            "Viagens": [
+                {
+                    "Id_Viagem": "000005",
+                    "Kms": 20,
+                    "Valor": 30,
+                    "TipoViagem": "Urbana",
+                    "BairroPartida": "Cascata",
+                    "BairroChegada": null,
+                    "CidadeChegada": null,
+                    "Carro": {
+                        "Codigo": 102,
+                        "Placa": "XYZ5678",
+                        "Marca": "Honda",
+                        "Modelo": "Civic",
+                        "Ano": 2018,
+                        "Motorista": {
+                            "Id": 2,
+                            "CPF_Motorista": "98765432100",
+                            "CNH": "98765432109",
+                            "Nome": "Relampago McQueen",
+                            "Email": "mcquenn@email.com",
+                            "Carro": {
+                                "Codigo":102
+                            },
+                            "Viagens": [
+                                {
+                                    "Id_Viagem": "000002"
+                                },
+                                {
+                                    "Id_Viagem": "000005"
+                                },
+                                {
+                                    "Id_Viagem": "000008"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "Id_Viagem": "000010",
+                    "Kms": 80,
+                    "Valor": 130,
+                    "TipoViagem": "Interurb",
+                    "BairroPartida": "Partenon",
+                    "BairroChegada": null,
+                    "CidadeChegada": "Canoas",
+                    "Carro": {
+                        "Codigo": 101,
+                        "Placa": "ABC1234",
+                        "Marca": "Toyota",
+                        "Modelo": "Corolla",
+                        "Ano": 2020,
+                        "Motorista": {
+                            "Id": 1,
+                            "CPF_Motorista": "12345678900",
+                            "CNH": "12345678901",
+                            "Nome": "Dominic Toretto",
+                            "Email": "toretto@email.com",
+                            "Carro": {
+                                "Codigo":101                           
+                            },
+                            "Viagens": [
+                                {
+                                    "Id_Viagem": "000001"
+                                },
+                                {
+                                    "Id_Viagem": "000004"
+                                },
+                                {
+                                    "Id_Viagem": "000007"
+                                },
+                                {
+                                    "Id_Viagem": "000010"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "Carros": [ 
+                {
+                    "Codigo": 101
+                },
+                {
+                    "Codigo" : 102
                 }
             ]
         }
@@ -307,8 +941,7 @@
                 "Modelo": "Corolla",
                 "Ano": 2020
             },
-            "Viagens": [ // Viagens realizadas pelo motorista
-                // Viagens realizadas pelo carro
+            "Viagens": [ 
                 {
                     "Id_Viagem": "000001"
                 },
@@ -336,8 +969,7 @@
                 "Modelo": "Civic",
                 "Ano": 2018
             },
-            "Viagens": [ // Viagens realizadas pelo motorista
-                // Viagens realizadas pelo carro
+            "Viagens": [ 
                 {
                     "Id_Viagem": "000002"
                 },
@@ -362,8 +994,7 @@
                 "Modelo": "Gol",
                 "Ano": 2019
             },
-            "Viagens": [ // Viagens realizadas pelo motorista
-                // Viagens realizadas pelo carro
+            "Viagens": [ 
                 {
                     "Id_Viagem": "000003"
                 },
@@ -390,7 +1021,7 @@
                 "Nome": "Dominic Toretto",
                 "Email": "toretto@email.com"
             },
-            "Viagens": [ // Consequentemente, as viagens que o motorista realizou
+            "Viagens": [ 
                 {
                     "Id_Viagem": "000001"
                 },
@@ -418,7 +1049,7 @@
                 "Nome": "Relampago McQueen",
                 "Email": "mcquenn@email.com"
             },
-            "Viagens": [ // Consequentemente, as viagens que o motorista realizou
+            "Viagens": [ 
                 {
                     "Id_Viagem": "000002"
                 },
@@ -443,7 +1074,7 @@
                 "Nome": "Brian O Conner",
                 "Email": "eobrian@email.com"
             },
-            "Viagens": [ // Consequentemente, as viagens que o motorista realizou
+            "Viagens": [
                 {
                     "Id_Viagem": "000003"
                 },
